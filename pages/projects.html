@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ronit Rai">
+    <meta name="generator" content="">
+    <title>Projects | Ronit Rai</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        .filterDiv{
+            display: none;
+            transition: 0.5s;
+        }
+
+        .show {
+            display: block;
+            transition: 0.5ms;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/cover.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center text-bg-dark" id="app">
+
+    <div class="container-wrapper">
+
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="app" v-cloak>
+            <header class="mb-auto fixed-top p-3" id="navbar-header">
+                <div data-bs-spy="scroll" data-bs-target=".nav-masthead" data-bs-smooth-scroll="true" tabindex="0">
+                    <a class="nav-link fw-bold py-1 px-0" style="float: inline-start;" href="../index.html"> <i
+                            class="bi bi-arrow-return-left"></i> Go Back </a>
+                    <nav class="nav nav-masthead" style="justify-content: center;" id="nav-active">
+
+                        <a class="nav-link fw-bold py-1 px-0" href="#">Home</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#about">About</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#skills">Skills</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="px-3" id="main-intro">
+                <h1 class="title-name">Projects</h1>
+
+
+                <div class="row icons-row p-0" style="color: transparent;">
+                    <a style="text-align:center; color: blue;" href="#project-catalog" class="col icons"><i
+                            class="bi bi-arrow-bar-down"></i></a>
+                </div>
+                <br>
+
+            </main>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="border-rounded" id="project-catalog" style="height:100%;">
+
+        <h1 class="lh-1 mb-3 text-center">Explore</h1>
+
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" id="filterInputBox">
+            <input type="checkbox" class="btn-check" onclick="filterSelection('all')" id="btncheck0" autocomplete="off" checked disabled>
+            <label class="btn btn-outline-secondary" for="btncheck0">All Projects</label>
+
+            <input type="checkbox" class="btn-check" onclick="filterSelection('webdev')" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Website Design/Development</label>
+
+            <input type="checkbox" class="btn-check" onclick="filterSelection('appdev')" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-success" for="btncheck2">Application Development</label>
+
+            <input type="checkbox" class="btn-check" onclick="filterSelection('scripting')" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-warning" for="btncheck3">Scripts & Problem Solving</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck4" onclick="filterSelection('other')" autocomplete="off">
+            <label class="btn btn-outline-info" for="btncheck4">Research & Others</label>
+        </div>
+
+        <div class="projects mt-5 mx-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4" >
+                <div class="col filterDiv projectDisplay" v-for="project in projects" :class="Object.values(project['tags'])">
+                    <div class="card text-bg-dark " >
+                        <img :src="project.images.main" class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">{{ project.name }}</h5>
+                            <!-- <p class="card-text">{{ project.desc }}</p> -->
+                            <div class="" v-for="link in project.links">
+                              <a target="_blank" class="link-offset-2 link-underline link-underline-opacity-75" :href="link.link_url">{{ link.link_name }}</a>  
+                            </div>
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <span class="badge text-bg-dark" v-for="tag in project.tags">{{ tag }}</span>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="collaborate" class="mt-5">
+
+        <h1>Want to Collaborate?</h1>
+        <h6>Open to all sorts of projects, happy to help and learn</h6>
+
+        <div class="collaborate-section row">
+            <div class="col-lg-6 p-5 text-secondary " id="collaborate-form">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com"
+                        disabled>
+                    <label for="floatingInputDisabled">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
+                        disabled></textarea>
+                    <label for="floatingTextareaDisabled">Proposal</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"
+                        style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
+                    <label for="floatingTextarea2Disabled">Comments</label>
+                </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelectDisabled"
+                        aria-label="Floating label disabled select example" disabled>
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <label for="floatingSelectDisabled">Works with selects</label>
+                </div>
+    
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary mt-3" disabled>Submit</button>
+                </div>
+    
+            </div>
+        </div>
+       
+    </div>
+
+    <hr>
+
+    <footer class="mt-auto text-white-50">
+        <!-- Contact Section -->
+        <div class="row p-5 " id="contact">
+
+            <div class="col-lg-6 col-md-12">
+                <h1>Contact Me</h1>
+                <div class="row mx-1 my-5">
+                    <div class="col">
+                        <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/email.png" class="figure-img img-fluid rounded contact-img icons"
+                                    alt="email">
+                                <figcaption class="figure-caption text-center">Email</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/instagram.png"
+                                    class="figure-img img-fluid rounded contact-img icons" alt="instagram">
+                                <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12" style="place-self: center;">
+                <h1>Other Links</h1>
+                <div class="row mx-1 my-5">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons"
+                                    alt="linkedin">
+                                <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/RonRaj101" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/github.png" class="figure-img img-fluid rounded contact-img icons"
+                                    alt="github">
+                                <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.fiverr.com/ronitraj101" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons"
+                                    alt="fiverr">
+                                <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+
+
+                    <div class="col">
+                        <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
+                            <figure class="figure">
+                                <img src="../assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons"
+                                    alt="upwork">
+                                <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+   
+    <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DY2VHVJB8L');
+  </script> -->
+    <script src="../assets/js/filter-cards.js"></script>
+    <script type="module">
+        import { project_data } from '../assets/data/data.js';
+       
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
+
+        createApp({
+            created() {
+                console.log(project_data, this.numProjectsFiltered);
+            },
+            updated(){
+                this.numProjectsFiltered = document.getElementsByClassName('show').length;
+            },
+            data() {
+                return {
+                    projects: project_data,
+                    numProjectsFiltered:  document.getElementsByClassName('show').length,
+                }
+            },
+            computed:{
+            }
+        }).mount('#app')
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+crossorigin="anonymous"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+async></script>
+</body>
+
+</html>

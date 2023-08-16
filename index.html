@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Ronit Rai">
+  <meta name="generator" content="">
+  <title>Ronit Rai</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/cover.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center text-bg-dark">
+
+  <div class="container-wrapper" id="hero-intro">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="app" v-cloak>
+      <header class="mb-auto fixed-top p-3" id="navbar-header">
+        <div data-bs-spy="scroll" data-bs-target=".nav-masthead" data-bs-smooth-scroll="true" tabindex="0">
+          <nav class="nav nav-masthead" style="justify-content: center;" id="nav-active">
+            <a class="nav-link fw-bold py-1 px-0" href="#">Home</a>
+            <!-- <a class="nav-link fw-bold py-1 px-0" href="#about">About</a> -->
+            <a class="nav-link fw-bold py-1 px-0" href="#skills">Expertise</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3" id="main-intro">
+        <h1 class="title-name">RONIT RAI</h1>
+
+        <p class="lead title-message">
+          A<span v-if="/[aeiou]/i.test(message[0])">n</span> <span id="changing-text">{{ message }}</span> <br>
+        </p>
+        <!-- <div class="row icons-row" style="color: black;" id="title-icons">
+          <a style="text-align:end; color: red;" href="https://www.linkedin.com/in/ronit-rai/" target="_blank"
+            class="col icons"><i class="bi bi-linkedin"></i></a>
+          <a style="text-align: start; color: green;" href="https://github.com/RonRaj101" target="_blank"
+            class="col icons"><i class="bi bi-github"></i></a>
+
+            <a href="" target="_self" class="col icons fs-6 p-0 m-0">More About Me<i class="bi bi-box-arrow-up-right"></i></a>
+        </div> -->
+        <br>
+      </main>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- <div class="border-rounded" id="about">
+
+    <h1 class="lh-1 mb-3 text-center">About Me</h1>
+
+    <div class="container col-xxl-12 px-4 py-2">
+      <div class="row flex-lg-row-reverse align-items-center g-5">
+        <div class="col-12 col-sm-12 col-lg-4">
+          <img src="assets/img/IMG-20221107-WA0005~2-portrait.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"  loading="lazy">
+        </div>
+        <div class="col-lg-8 col-sm-12">
+          
+          <p class="lead">
+            <h4 class="card-title">A Bit About Me...</h4>
+            <p class="card-text">Well I have always been into technology, always been curious about the possibilities.
+              Since then I have been creating game levels/maps, modifying my favourite games which evolved into me
+              creating my own games using <b>Unity Framework</b>.
+              From then on, I learned Website Development basics to advanced which is the thing I specialize in now.
+              <br>
+              Additional Skills I learned include Desktop/Mobile Application Development, Databases and General Problem
+              Solving in Programming.
+              My Aim for the near future is to work with an emerging startup and help them using my existing skills, in
+              the process even acquiring more skills.
+              <br>
+              Eventually I would love to have my own startup, a game development studio or something which would allow
+              me to explore my creative side and introduce a new genre/type of product to the world.
+            </p>
+            <h4 class="card-title">Present Life...</h4>
+            <p class="card-text">Recently I completed my course <b>Information Technology</b> at <b>Middlesex University
+                London</b>.
+              I expect to recieve my degree in July 2023.
+              <br>
+              Before coming to the UK, I was in Pakistan where I started Freelance Work on <b>Fiverr</b> &
+              <b>Upwork</b>.
+              This gave me the confidence to showcase my skills and improve upon not only my technical skills but also
+              my soft skills such as Communication and Client Etiquette.
+
+            </p>
+          </p>
+           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+  <hr>
+
+  <div id="skills" class="mt-5">
+
+    <h1>Areas of Expertise</h1>
+
+    <div class="row" id="skills-figures">
+
+      <figure class="figure mb-5 col-lg-4 col-md-6 icons position-relative">
+        <figcaption class="figure-caption" title="Website Development">Website Development</figcaption>
+        <hr>
+
+        <p class="fig-skills-desc">4+ Years of Experience in Developing Websites. Developed custom and non-custom
+          (WordPress) websites for academic projects and clients.</p>
+
+        <!-- Show 10 icons side by side they should be 32*32 -->
+        <div class="fig-skills-icons">
+
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/img/Website Dev Icons/wordpress.png" alt="WordPress" title="WordPress"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Website Dev Icons/4375161_logo_vuejs_icon.png" alt="Vue.js" title="Vue.js"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Website Dev Icons/4373205_laravel_logo_logos_icon.png" alt="Laravel" title="Laravel"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Website Dev Icons/sass.png" alt="SAAS" title="SAAS" style="width:32px;height:32px;"
+                class="col">
+              <img src="assets/img/Website Dev Icons/2993783_dot_social media_net_icon.png" alt=".NET" title=".NET"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Website Dev Icons/mysql.png" alt="MySQL" title="MySQL"
+                style="width:32px;height:32px;" class="col">
+            </div>
+            <a href="" data-bs-toggle="modal" data-bs-target="#web-dev-modal"
+              class="bg-text-dark fs-3 p-1 col  text-end"><i class="bi bi-arrow-bar-right"></i></a>
+          </div>
+
+        </div>
+
+      </figure>
+
+      <figure class="figure mb-5 col-lg-4 col-md-6 icons position-relative">
+        <figcaption class="figure-caption" title="General Problem Solving">Algorithms & Scripting</figcaption>
+        <hr>
+        <p class="fig-skills-desc">Can leverage my problem solving skills to design scripts and algorithms to automate
+          certain tasks. Experience in API Integration and DSA.</p>
+
+
+        <div class="fig-skills-icons">
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/img/Algorithms Icons/c-sharp.png" title="C#" alt="C#" style="width:32px;height:32px;"
+                class="col">
+              <img src="assets/img/Algorithms Icons/java.png" title="Java" alt="Java" style="width:32px;height:32px;"
+                class="col">
+              <img src="assets/img/Algorithms Icons/js.png" title="Javascript" alt="Javascript"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Algorithms Icons/python.png" title="Python" alt="Python"
+                style="width:32px;height:32px;" class="col">
+            </div>
+            <a href="" data-bs-toggle="modal" data-bs-target="#algo-src-modal"
+              class="bg-text-dark fs-3 p-1 col  text-end"><i class="bi bi-arrow-bar-right"></i></a>
+          </div>
+
+        </div>
+
+
+
+      </figure>
+
+      <figure class="figure mb-5 col-lg-4 col-md-6 icons position-relative">
+        <figcaption class="figure-caption text-truncate" title="Cross Platform Application Development">Cross Platform
+          Application Dev</figcaption>
+        <hr>
+        <p class="fig-skills-desc">Developing Mobile Applications from Scratch, Platform based Development and
+          Cross-Platform Application Development Experience.</p>
+
+
+        <div class="fig-skills-icons">
+          <div class="row">
+            <div class="col-auto">
+              <img src="assets/img/Mobile App Dev Icons/android.png" title="Android Studio" alt="Android Studio"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Mobile App Dev Icons/app-store.png" title="App Store" alt="App Store"
+                style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Mobile App Dev Icons/1269843_app_development_framework_htm_hybrid_icon.png"
+                title="Ionic Framework" alt="Ionic Framework" style="width:32px;height:32px;" class="col">
+              <img src="assets/img/Mobile App Dev Icons/flutter.png" title="Flutter" alt="Flutter"
+                style="width:32px;height:32px;" class="col">
+            </div>
+            <a href="" data-bs-toggle="modal" data-bs-target="#cross-app-modal"
+              class="bg-text-dark fs-3 p-1 col  text-end"><i class="bi bi-arrow-bar-right"></i></a>
+          </div>
+
+
+        </div>
+
+
+      </figure>
+
+    </div>
+  </div>
+
+
+  <!--  Modal 1 -->
+  <div class="modal fade" data-bs-theme="dark" id="web-dev-modal" tabindex="-1" aria-labelledby="web-dev-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title mx-3 fs-5" id="exampleModalLabel">Website Development</h1>
+          <button type="button" class="btn-close mx-1" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fig-skills-desc">Website Development has been my entry into the world of programming.</p>
+
+          <p class="fig-skills-desc">Have been developing websites for the past 4 years for both academic and
+            professional purposes.
+            My Experience extends to both front-end and back-end development, alongside database management. </p>
+
+          <p class="fig-skills-desc"> Has been one of the most interesting and challenging areas of programming for me
+            since I have to keep up with the latest trends and technologies.
+            The Technologies I usually use are Vue.js, Laravel, .NET, MySQL, SAAS, WordPress, etc.</p>
+
+          <div class="row">
+            <div class="col">
+              <div class="fig-skills-icons">
+                <img src="assets/img/Website Dev Icons/wordpress.png" alt="WordPress" title="WordPress"
+                  style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Website Dev Icons/4375161_logo_vuejs_icon.png" alt="Vue.js" title="Vue.js"
+                  style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Website Dev Icons/4373205_laravel_logo_logos_icon.png" alt="Laravel"
+                  title="Laravel" style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Website Dev Icons/sass.png" alt="SAAS" title="SAAS" style="width:24px;height:24px;"
+                  class="col">
+                <img src="assets/img/Website Dev Icons/2993783_dot_social media_net_icon.png" alt=".NET" title=".NET"
+                  style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Website Dev Icons/mysql.png" alt="MySQL" title="MySQL"
+                  style="width:24px;height:24px;" class="col">
+              </div>
+            </div>
+            <div class="col">
+              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Modal 2 -->
+  <div class="modal fade" data-bs-theme="dark" id="algo-src-modal" tabindex="-1" aria-labelledby="algo-src-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title mx-3 fs-5" id="exampleModalLabel">Algorithms & Scripting</h1>
+          <button type="button" class="btn-close mx-1" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fig-skills-desc">Have great command on Programming Languages and Algorithms, can use my problem
+            solving skills and creativity to come up with a solution.</p>
+
+          <p class="fig-skills-desc">Experienced in Languages such as Python, C#, JAVA & JavaScript. API Creation and
+          </p>
+
+          <p class="fig-skills-desc"> Has been one of the most interesting and challenging areas of programming for me
+            since I have to keep up with the latest trends and technologies.
+            The Technologies I usually use are Vue.js, Laravel, .NET, MySQL, SAAS, WordPress, etc.</p>
+
+          <div class="row">
+            <div class="col">
+              <div class="fig-skills-icons">
+                <img src="assets/img/Algorithms Icons/c-sharp.png" title="C#" alt="C#" style="width:24px;height:24px;"
+                  class="col">
+                <img src="assets/img/Algorithms Icons/java.png" title="Java" alt="Java" style="width:24px;height:24px;"
+                  class="col">
+                <img src="assets/img/Algorithms Icons/js.png" title="Javascript" alt="Javascript"
+                  style="width:32px;height:32px;" class="col">
+                <img src="assets/img/Algorithms Icons/python.png" title="Python" alt="Python"
+                  style="width:24px;height:24px;" class="col">
+              </div>
+            </div>
+            <div class="col">
+              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Modal 3 -->
+  <div class="modal fade" data-bs-theme="dark" id="cross-app-modal" tabindex="-1" aria-labelledby="cross-app-modal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title mx-3 fs-5" id="exampleModalLabel">Cross Platform Application Development</h1>
+          <button type="button" class="btn-close mx-1" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fig-skills-desc">A Technology/Tool I learned to utilse quite recently. Have used Flutter (Dart) &
+            more recently Ionic(Vue.js)</p>
+
+          <p class="fig-skills-desc">
+            Cross PLatform Application Development is a great way to create applications for both Android and iOS with a
+            single codebase and database.
+            Definitely a steep learning curve since I now have to take into account mobile first features such as Touch,
+            Sensors and Vibration.
+          </p>
+
+          <p class="fig-skills-desc">
+            Still Learning and improving. Check out my application projects.
+            The Technologies I usually use are Ionic, Flutter</p>
+
+          <div class="row">
+            <div class="col">
+              <div class="fig-skills-icons">
+                <img src="assets/img/Mobile App Dev Icons/android.png" title="Android Studio" alt="Android Studio"
+                  style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Mobile App Dev Icons/app-store.png" title="App Store" alt="App Store"
+                  style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Mobile App Dev Icons/1269843_app_development_framework_htm_hybrid_icon.png"
+                  title="Ionic Framework" alt="Ionic Framework" style="width:24px;height:24px;" class="col">
+                <img src="assets/img/Mobile App Dev Icons/flutter.png" title="Flutter" alt="Flutter"
+                  style="width:24px;height:24px;" class="col">
+              </div>
+            </div>
+            <div class="col">
+              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  Modal End -->
+  <hr>
+
+  <div id="projects" class="mt-5 py-4">
+
+    <h1>Featured Projects</h1>
+
+    <div class="mx-3 mt-5" id="project-catalog">
+
+      <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 688.4px;">
+        
+        <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 0px;">
+          <div class="card text-bg-dark text-start">
+            <img class="bd-placeholder-img card-img-top" width="100%"  src="assets/img/Projects/FrameInk/frameink.webp" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="FrameInk" preserveAspectRatio="xMidYMid slice" focusable="false">
+           
+            <div class="card-body">
+              <h5 class="card-title">FrameInk</h5>
+              <p class="card-text">Frameink has an exquisite team of dedicated designers who apply best practices to take the project from the concept stage to the design stage.</p>
+              <p class="card-text"><small class="text-body-secondary">2022</small></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 " style="position: absolute; left: 33.3333%; top: 0px;">
+          <div class="card p-3 text-bg-danger">
+            <figure class="p-3 mb-0">
+              <blockquote class="blockquote">
+                <p>AI is gonna take my job!</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-light">
+                 <cite title="Source Title">Literally Me</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 66.6667%; top: 0px;">
+          <div class="card text-bg-dark text-start">
+            <img class="bd-placeholder-img card-img-top" width="100%" src="assets/img/Projects/Muhafizz/muhafizz login cover.jpeg"  xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Muhafizz" preserveAspectRatio="xMidYMid slice" focusable="false">
+              
+            </sim>
+            <div class="card-body">
+              <h5 class="card-title">Muhafizz</h5>
+              <p class="card-text">Muhafizz is a revolutionary application designed to prioritise your safety and security by keeping you up-to-date with events and incidents that may be potentially life-threatening.</p>
+              <p class="card-text"><small class="text-body-secondary">2021</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 " style="position: absolute; left: 33.3333%; top: 170.6px;">
+          <div class="card text-bg-primary text-center p-3">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-white">
+                <cite title="Source Title">Some Famous CSS Framework</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 361.6px;">
+          <div class="card">
+            <img class="bd-placeholder-img card-img" width="100%"  src="assets/img/Mohejo Daro Project/top-view.jpg" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Mohenjo-daro Project" preserveAspectRatio="xMidYMid slice" focusable="false">
+            </img>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 66.6667%; top: 0px;">
+          <div class="card text-bg-dark text-start">
+            <img class="bd-placeholder-img card-img-top" width="100%" src="assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.png"  xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Pandemic Board Game" preserveAspectRatio="xMidYMid slice" focusable="false">
+              
+            </sim>
+            <div class="card-body">
+              <h5 class="card-title">Pandemic Board Game</h5>
+              <p class="card-text">Pandemic Board Game created in Java Command Line, complete with all features to make a full functional/playable game.</p>
+              <p class="card-text"><small class="text-body-secondary">2023</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 377.6px;">
+          <div class="card p-3 text-center text-bg-light">
+            <figure class="mb-0">
+              <blockquote class="blockquote">
+                <p>I am become Developer, destroyer of my own mental health</p>
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0 text-body-secondary">
+                <cite title="Source Title">Algorithmheimer</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 361.6px;">
+          <div class="card">
+            <img class="bd-placeholder-img card-img" width="100%" src="assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.png" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="BarterMate" preserveAspectRatio="xMidYMid slice" focusable="true">
+            </img>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2">
+        <a class="btn btn-light" type="button" href="pages/projects.html">Explore More</a>
+      </div>
+
+     
+    </div>
+
+
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="row p-5 " id="contact">
+
+    <div class="col-lg-6 col-md-12">
+      <h1>Contact Me</h1>
+      <div class="row mx-1 my-5">
+        <div class="col">
+          <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
+            <figure class="figure">
+              <img src="assets/email.png" class="figure-img img-fluid rounded contact-img icons" alt="email">
+              <figcaption class="figure-caption text-center">Email</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
+            <figure class="figure">
+              <img src="assets/instagram.png" class="figure-img img-fluid rounded contact-img icons" alt="instagram">
+              <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12" style="place-self: center;">
+      <h1>Other Links</h1>
+      <div class="row mx-1 my-5">
+        <div class="col">
+          <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
+            <figure class="figure">
+              <img src="assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons" alt="linkedin">
+              <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/RonRaj101" target="_blank">
+            <figure class="figure">
+              <img src="assets/github.png" class="figure-img img-fluid rounded contact-img icons" alt="github">
+              <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
+            </figure>
+          </a>
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <a href="https://www.fiverr.com/ronitraj101" target="_blank">
+            <figure class="figure">
+              <img src="assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons" alt="fiverr">
+              <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
+            </figure>
+          </a>
+        </div>
+
+
+        <div class="col">
+          <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
+            <figure class="figure">
+              <img src="assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons" alt="upwork">
+              <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="mt-auto text-white-50">
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    ></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DY2VHVJB8L');
+  </script>
+
+  <script type="module">
+    import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
+
+    createApp({
+      mounted() {
+        setInterval(this.changeText, 1000);
+      },
+      data() {
+        return {
+          messages: ['Curious Individual', 'Website Developer', 'Student', 'Internet Explorer'],
+          message: 'Normal Guy',
+          count: 0,
+        }
+      },
+      methods: {
+        changeText() {
+          this.message = this.messages[this.count];
+          this.count++;
+          if (this.count == this.messages.length) {
+            this.count = 0;
+          }
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+
+</html>
