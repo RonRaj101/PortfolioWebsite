@@ -3,8 +3,8 @@ export var project_data = [
         "name": "Muhafizz",
         "desc": "Muhafizz is a revolutionary application designed to prioritise your safety and security by keeping you up-to-date with events and incidents that may be potentially life-threatening.",
         "images":{
-            "main": "../assets/img/Projects/Muhafizz/muhafizz login cover.jpeg",
-            "secondary": "../assets/img/Projects/Muhafizz/website-img.png"
+            "main": "../assets/img/Projects/Muhafizz/website-img.png",
+            "secondary": "../assets/img/Projects/Muhafizz/muhafizz login cover.jpeg"
         },
         "links":{
             "1": {
@@ -71,5 +71,145 @@ export var project_data = [
         "tags":{
             "1": "webdev"
         }
+    },
+
+    {
+        "name": "BarterMate",
+        "desc": "BarterMate is a cutting-edge mobile application that provides a secure e-commerce platform for users to easily trade or barter commodities they no longer require. The app effectively tackles the critical issue of electronic waste.",
+        "images":{
+            "main": "../assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.png",
+            "secondary": "../assets/img/Projects/BarterMate/8309.jpg"
+        },
+        "links":{
+            "1": {
+                "link_name":"Website",
+                "link_url": "hhttp://bartermate.infinityfreeapp.com/index.php"
+            },
+            "2": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/BarterMateApp"
+            },
+            "3": {
+                "link_name":"Research Paper",
+                "link_url": "https://ronitrai.notion.site/ronitrai/Project-Final-Report-59e62366785c4dbc84c7f0585297dd78"
+            }
+        },
+        "tools":{
+            "1": "html",
+            "2":"css",
+            "3": "js",
+            "4":"bootstrap",
+            "5": "ionic",
+            "6":"capacitor",
+            "7":"cross-platform",
+            "8":"firebase",
+            "9":"playstore"
+        },
+        "tags":{
+            "1": "webdev",
+            "2":"appdev",
+            "3":"other",
+            "4": "scripting"
+        }
+    },
+
+    {
+        "name": "Pandemic Board Game",
+        "desc": "A Command Line Implementation of the Pandemic Board Game. Complete with all features and an A.I Agent.",
+        "images":{
+            "main": "../assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.png",
+            "secondary": ""
+        },
+        "links":{
+            "1": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/Pandemic-Board-Game"
+            },
+            "2": {
+                "link_name":"Research Paper",
+                "link_url": "https://ronitrai.notion.site/CST-3170-CW3-f7f987ae24b64a77adeab5c2a6707b0d?pvs=4"
+            }
+        },
+        "tools":{
+            "1": "java",
+            "2":"oop",
+            "3": "command-line",
+            "4":"ai",
+            "5":"board-game",
+            "6":"game",
+            "7":"scripting"
+        },
+        "tags":{
+            "1":"other",
+            "2": "scripting"
+        }
+    },
+
+    {
+        "name": "Digit Recognition",
+        "desc": "A Machine Learning Model that can recognize handwritten digits with high accuracy. UCI ML Repository Dataset used.",
+        "images":{
+            "main": "../assets/img/Projects/UCI Digit Recognition/DALL·E 2023-08-17 15.53.54 - A Formless AI recognises a numeric digit from a grid of scrambled data, digital painting.png",
+            "secondary": ""
+        },
+        "links":{
+            "1": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/UCI-Digit-Recognition"
+            },
+            "2": {
+                "link_name":"Research Paper",
+                "link_url": "https://ronitrai.notion.site/CW2-CST-3170-2a54741e17e6461cb54d51c0a0f354a4?pvs=4"
+            }
+        },
+        "tools":{
+            "1": "java",
+            "2":"oop",
+            "3": "command-line",
+            "4":"ai",
+            "5":"machine-learning",
+            "6":"scripting",
+            "7":"digit-recognition",
+            "8":"uci-ml-repository" 
+        },
+        "tags":{
+            "1":"other",
+            "2": "scripting"
+        }
+    },
+
+    {
+        "name": "Asteroid Mineablity Prediction",
+        "desc": "A Weka Data Prediction Model that can predict the mineability of an asteroid based on its physical properties. Asternak API & Dataset used.",
+        "images":{
+            "main": "../assets/img/Projects/UCI Digit Recognition/DALL·E 2023-08-17 15.53.54 - A Formless AI recognises a numeric digit from a grid of scrambled data, digital painting.png",
+            "secondary": ""
+        },
+        "links":{
+            "1": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/UCI-Digit-Recognition"
+            },
+            "2": {
+                "link_name":"Research Paper",
+                "link_url": "https://ronitrai.notion.site/CW2-CST-3170-2a54741e17e6461cb54d51c0a0f354a4?pvs=4"
+            }
+        },
+        "tools":{
+            "1": "java",
+            "2":"oop",
+            "3": "command-line",
+            "4":"ai",
+            "5":"machine-learning",
+            "6":"scripting",
+            "7":"digit-recognition",
+            "8":"uci-ml-repository" 
+        },
+        "tags":{
+            "1":"other",
+            "2": "scripting"
+        }
     }
+
+   
 ];
