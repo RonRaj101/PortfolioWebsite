@@ -182,17 +182,17 @@ export var project_data = [
         "name": "Asteroid Mineablity Prediction",
         "desc": "A Weka Data Prediction Model that can predict the mineability of an asteroid based on its physical properties. Asternak API & Dataset used.",
         "images":{
-            "main": "../assets/img/Projects/UCI Digit Recognition/DALL·E 2023-08-17 15.53.54 - A Formless AI recognises a numeric digit from a grid of scrambled data, digital painting.png",
+            "main": "../assets/img/Projects/Asterank Research/craiyon_202213_Mining_on_a_small_but_valuable_asteroid.png",
             "secondary": ""
         },
         "links":{
             "1": {
-                "link_name":"Source Code",
+                "link_name":"Weka Model",
                 "link_url": "https://github.com/RonRaj101/UCI-Digit-Recognition"
             },
             "2": {
                 "link_name":"Research Paper",
-                "link_url": "https://ronitrai.notion.site/CW2-CST-3170-2a54741e17e6461cb54d51c0a0f354a4?pvs=4"
+                "link_url": "https://ronitrai.notion.site/CST-3340-CW2-cfba9cf032724e6098c8ad99e851f2af?pvs=4"
             }
         },
         "tools":{

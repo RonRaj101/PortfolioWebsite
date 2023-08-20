@@ -111,7 +111,7 @@
             <div class="row row-cols-1 row-cols-lg-3 g-4" id="projects-row" >
                 <div class="col filterDiv projectDisplay" v-for="project in projects" :class="Object.values(project['tags'])">
                     <div class="card text-bg-dark " >
-                        <img :src="project.images.main" style="object-fit: contain;" class="card-img-top" alt="...">
+                        <img :src="project.images.main" style="object-fit: cover; aspect-ratio:1/1;" class="card-img-top" alt="...">
                         <div class="card-body text-start">
                             <h5 class="card-title">{{ project.name }}</h5>
                             <!-- <p class="card-text">{{ project.desc }}</p> -->
