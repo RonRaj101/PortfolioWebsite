@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Ronit Rai">
     <meta name="generator" content="">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <title>Projects | Ronit Rai</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
@@ -25,12 +26,14 @@
 
         .filterDiv{
             display: none;
+            opacity: 0;
             transition: 0.5s;
         }
 
         .show {
             display: block;
-            transition: 0.5ms;
+            opacity: 1;
+            transition: opacity 0.5;
         }
 
         #projects-row{
@@ -59,9 +62,8 @@
                     <nav class="nav nav-masthead" style="justify-content: center;" id="nav-active">
 
                         <a class="nav-link fw-bold py-1 px-0" href="#">Home</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#about">About</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#skills">Skills</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#project-catalog">Explore</a>
+                        <a class="nav-link fw-bold py-1 px-0" href="#collaborate">Collab</a>
                         <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
                     </nav>
                 </div>
@@ -91,7 +93,7 @@
         <h1 class="lh-1 mb-3 text-center">Explore</h1>
 
         <div class="btn-group container" style="flex-wrap: wrap;" role="group" aria-label="Basic checkbox toggle button group" id="filterInputBox">
-            <input type="checkbox" class="btn-check" onclick="filterSelection('all')" id="btncheck0" autocomplete="off" checked disabled>
+            <input type="checkbox" class="btn-check" onclick="filterSelection('all')" id="btncheck0" autocomplete="off" checked>
             <label class="btn btn-outline-secondary" for="btncheck0">All Projects</label>
 
             <input type="checkbox" class="btn-check" onclick="filterSelection('webdev')" id="btncheck1" autocomplete="off">
@@ -124,12 +126,12 @@
                         </div>
                     </div>
                 </div>
-
-              
-
             </div>
+            
         </div>
-
+        <div class="d-grid container-fluid gap-2 my-5">
+            <a class="btn btn-light" type="button" href="#collaborate">More to Come... Want to Help me make more?</a>
+        </div>
     </div>
 
     <hr>
@@ -140,37 +142,41 @@
         <h6>Open to all sorts of projects, happy to help and learn</h6>
 
         <div class="collaborate-section row">
-            <div class="col-lg-6 p-5 text-secondary " id="collaborate-form">
+            <div class="col-lg-6 col-sm-12 p-5 text-secondary " id="collaborate-form">
+                <div class="form-floating mb-3">
+                    <input type="name" class="form-control" id="floatingInputDisabled" placeholder="Your Name"
+                        >
+                    <label for="floatingInputDisabled">Name</label>
+                </div>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com"
-                        disabled>
+                        >
                     <label for="floatingInputDisabled">Email address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"
-                        disabled></textarea>
-                    <label for="floatingTextareaDisabled">Proposal</label>
+                    <textarea class="form-control" placeholder="Lets create a way to save smells..." id="floatingTextarea2Disabled"
+                        style="height: 100px" ></textarea>
+                    <label for="floatingTextarea2Disabled">Proposal</label>
                 </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2Disabled"
-                        style="height: 100px" disabled>Disabled textarea with some text inside</textarea>
-                    <label for="floatingTextarea2Disabled">Comments</label>
-                </div>
+                
                 <div class="form-floating">
                     <select class="form-select" id="floatingSelectDisabled"
-                        aria-label="Floating label disabled select example" disabled>
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        aria-label="Floating label disabled select example">
+                        <option value="1">Research</option>
+                        <option value="2">Development</option>
+                        <option value="3">Other</option>
                     </select>
-                    <label for="floatingSelectDisabled">Works with selects</label>
+                    <label for="floatingSelectDisabled">Category</label>
                 </div>
     
                 <div class="d-grid gap-2">
                     <button type="button" class="btn btn-primary mt-3" disabled>Submit</button>
                 </div>
     
+            </div>
+
+            <div class="col-lg-6 col-sm-0">
+                <img class="img-fluid" style="height: 100%;" src="../assets/img/undraw_code_typing_re_p8b9.svg" alt="">
             </div>
         </div>
        

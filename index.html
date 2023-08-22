@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Ronit Rai">
   <meta name="generator" content="">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <title>Ronit Rai</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
@@ -36,11 +37,12 @@
       <header class="mb-auto fixed-top p-3" id="navbar-header">
         <div data-bs-spy="scroll" data-bs-target=".nav-masthead" data-bs-smooth-scroll="true" tabindex="0">
           <nav class="nav nav-masthead" style="justify-content: center;" id="nav-active">
-            <a class="nav-link fw-bold py-1 px-0" href="#">Home</a>
+            <a class="nav-link fw-bold py-1 px-0" href="index.html">Home</a>
             <!-- <a class="nav-link fw-bold py-1 px-0" href="#about">About</a> -->
             <a class="nav-link fw-bold py-1 px-0" href="#skills">Expertise</a>
             <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
             <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+            
           </nav>
         </div>
       </header>
@@ -51,14 +53,7 @@
         <p class="lead title-message">
           A<span v-if="/[aeiou]/i.test(message[0])">n</span> <span id="changing-text">{{ message }}</span> <br>
         </p>
-        <!-- <div class="row icons-row" style="color: black;" id="title-icons">
-          <a style="text-align:end; color: red;" href="https://www.linkedin.com/in/ronit-rai/" target="_blank"
-            class="col icons"><i class="bi bi-linkedin"></i></a>
-          <a style="text-align: start; color: green;" href="https://github.com/RonRaj101" target="_blank"
-            class="col icons"><i class="bi bi-github"></i></a>
-
-            <a href="" target="_self" class="col icons fs-6 p-0 m-0">More About Me<i class="bi bi-box-arrow-up-right"></i></a>
-        </div> -->
+          <a class="nav-link text-center nav-link link-primary fw-bold py-1 px-0" href="pages/about.html">About Me <i class="bi bi-arrow-up-right"></i></a>
         <br>
       </main>
 
@@ -258,7 +253,7 @@
               </div>
             </div>
             <div class="col">
-              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+              <a href="pages/projects.html#project-catalog" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</a>
             </div>
           </div>
         </div>
@@ -301,7 +296,7 @@
               </div>
             </div>
             <div class="col">
-              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+              <a href="pages/projects.html#project-catalog" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</a>
             </div>
           </div>
 
@@ -328,7 +323,7 @@
             more recently Ionic(Vue.js)</p>
 
           <p class="fig-skills-desc">
-            Cross PLatform Application Development is a great way to create applications for both Android and iOS with a
+            Cross Platform Application Development is a great way to create applications for both Android and iOS with a
             single codebase and database.
             Definitely a steep learning curve since I now have to take into account mobile first features such as Touch,
             Sensors and Vibration.
@@ -352,7 +347,7 @@
               </div>
             </div>
             <div class="col">
-              <button href="#" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</button>
+              <a href="pages/projects.html#project-catalog" class="bg-text-dark mx-3 p-1 float-start">Explore Projects</a>
             </div>
           </div>
         </div>
@@ -371,15 +366,17 @@
     <div class="mx-3 mt-5" id="project-catalog">
 
       <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 688.4px;">
-        
+
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 0px;">
           <div class="card text-bg-dark text-start">
-            <img class="bd-placeholder-img card-img-top" width="100%"  src="assets/img/Projects/FrameInk/frameink.webp" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="FrameInk" preserveAspectRatio="xMidYMid slice" focusable="false">
-           
+            <img class="bd-placeholder-img card-img-top" width="100%" src="assets/img/Projects/FrameInk/frameink.webp"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FrameInk" preserveAspectRatio="xMidYMid slice"
+              focusable="false">
+
             <div class="card-body">
               <h5 class="card-title">FrameInk</h5>
-              <p class="card-text">Frameink has an exquisite team of dedicated designers who apply best practices to take the project from the concept stage to the design stage.</p>
+              <p class="card-text">Frameink has an exquisite team of dedicated designers who apply best practices to
+                take the project from the concept stage to the design stage.</p>
               <p class="card-text"><small class="text-body-secondary">2022</small></p>
             </div>
           </div>
@@ -392,20 +389,23 @@
                 <p>AI is gonna take my job!</p>
               </blockquote>
               <figcaption class="blockquote-footer mb-0 text-light">
-                 <cite title="Source Title">Literally Me</cite>
+                <cite title="Source Title">Literally Me</cite>
               </figcaption>
             </figure>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 66.6667%; top: 0px;">
           <div class="card text-bg-dark text-start">
-            <img class="bd-placeholder-img card-img-top" width="100%" src="assets/img/Projects/Muhafizz/muhafizz login cover.jpeg"  xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Muhafizz" preserveAspectRatio="xMidYMid slice" focusable="false">
-              
+            <img class="bd-placeholder-img card-img-top" width="100%"
+              src="assets/img/Projects/Muhafizz/muhafizz login cover.jpeg" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Muhafizz" preserveAspectRatio="xMidYMid slice" focusable="false">
+
             </sim>
             <div class="card-body">
               <h5 class="card-title">Muhafizz</h5>
-              <p class="card-text">Muhafizz is a revolutionary application designed to prioritise your safety and security by keeping you up-to-date with events and incidents that may be potentially life-threatening.</p>
+              <p class="card-text">Muhafizz is a revolutionary application designed to prioritise your safety and
+                security by keeping you up-to-date with events and incidents that may be potentially life-threatening.
+              </p>
               <p class="card-text"><small class="text-body-secondary">2021</small></p>
             </div>
           </div>
@@ -424,20 +424,24 @@
         </div>
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 361.6px;">
           <div class="card">
-            <img class="bd-placeholder-img card-img" width="100%"  src="assets/img/Projects/Mohejo Daro Project/top-view.jpg" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Mohenjo-daro Project" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <img class="bd-placeholder-img card-img" width="100%"
+              src="assets/img/Projects/Mohejo Daro Project/top-view.jpg" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Mohenjo-daro Project" preserveAspectRatio="xMidYMid slice" focusable="false">
             </img>
           </div>
         </div>
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 66.6667%; top: 0px;">
           <div class="card text-bg-dark text-start">
-            <img class="bd-placeholder-img card-img-top" width="100%" src="assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.png"  xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Pandemic Board Game" preserveAspectRatio="xMidYMid slice" focusable="false">
-              
+            <img class="bd-placeholder-img card-img-top" width="100%"
+              src="assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.png"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pandemic Board Game"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
             </sim>
             <div class="card-body">
               <h5 class="card-title">Pandemic Board Game</h5>
-              <p class="card-text">Pandemic Board Game created in Java Command Line, complete with all features to make a full functional/playable game.</p>
+              <p class="card-text">Pandemic Board Game created in Java Command Line, complete with all features to make
+                a full functional/playable game.</p>
               <p class="card-text"><small class="text-body-secondary">2023</small></p>
             </div>
           </div>
@@ -456,7 +460,8 @@
         </div>
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 361.6px;">
           <div class="card">
-            <img class="bd-placeholder-img card-img" width="100%" src="assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.png" xmlns="http://www.w3.org/2000/svg"
+            <img class="bd-placeholder-img card-img" width="100%"
+              src="assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.png" xmlns="http://www.w3.org/2000/svg"
               role="img" aria-label="BarterMate" preserveAspectRatio="xMidYMid slice" focusable="true">
             </img>
           </div>
@@ -467,7 +472,7 @@
         <a class="btn btn-light" type="button" href="pages/projects.html">Explore More</a>
       </div>
 
-     
+
     </div>
 
 
@@ -475,89 +480,89 @@
 
   <hr>
 
-  <!-- Contact Section -->
-  <div class="row p-5 " id="contact">
 
-    <div class="col-lg-6 col-md-12">
-      <h1>Contact Me</h1>
-      <div class="row mx-1 my-5">
-        <div class="col">
-          <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
-            <figure class="figure">
-              <img src="assets/email.png" class="figure-img img-fluid rounded contact-img icons" alt="email">
-              <figcaption class="figure-caption text-center">Email</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
-            <figure class="figure">
-              <img src="assets/instagram.png" class="figure-img img-fluid rounded contact-img icons" alt="instagram">
-              <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-6 col-md-12" style="place-self: center;">
-      <h1>Other Links</h1>
-      <div class="row mx-1 my-5">
-        <div class="col">
-          <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
-            <figure class="figure">
-              <img src="assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons" alt="linkedin">
-              <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
-            </figure>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/RonRaj101" target="_blank">
-            <figure class="figure">
-              <img src="assets/github.png" class="figure-img img-fluid rounded contact-img icons" alt="github">
-              <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
-            </figure>
-          </a>
-        </div>
-
-
-
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <a href="https://www.fiverr.com/ronitraj101" target="_blank">
-            <figure class="figure">
-              <img src="assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons" alt="fiverr">
-              <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
-            </figure>
-          </a>
-        </div>
-
-
-        <div class="col">
-          <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
-            <figure class="figure">
-              <img src="assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons" alt="upwork">
-              <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
-            </figure>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
   <footer class="mt-auto text-white-50">
+    <!-- Contact Section -->
+    <div class="row p-5 " id="contact">
 
+      <div class="col-lg-6 col-md-12">
+        <h1>Contact Me</h1>
+        <div class="row mx-1 my-5">
+          <div class="col">
+            <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
+              <figure class="figure">
+                <img src="assets/email.png" class="figure-img img-fluid rounded contact-img icons" alt="email">
+                <figcaption class="figure-caption text-center">Email</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
+              <figure class="figure">
+                <img src="assets/instagram.png" class="figure-img img-fluid rounded contact-img icons" alt="instagram">
+                <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-12" style="place-self: center;">
+        <h1>Other Links</h1>
+        <div class="row mx-1 my-5">
+          <div class="col">
+            <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
+              <figure class="figure">
+                <img src="assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons" alt="linkedin">
+                <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col">
+            <a href="https://github.com/RonRaj101" target="_blank">
+              <figure class="figure">
+                <img src="assets/github.png" class="figure-img img-fluid rounded contact-img icons" alt="github">
+                <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
+              </figure>
+            </a>
+          </div>
+
+
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <a href="https://www.fiverr.com/ronitraj101" target="_blank">
+              <figure class="figure">
+                <img src="assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons" alt="fiverr">
+                <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
+              </figure>
+            </a>
+          </div>
+
+
+          <div class="col">
+            <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
+              <figure class="figure">
+                <img src="assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons" alt="upwork">
+                <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-    ></script>
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+    crossorigin="anonymous"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
   <script>
@@ -578,7 +583,7 @@
       data() {
         return {
           messages: ['Curious Individual', 'Website Developer', 'Student', 'Internet Explorer'],
-          message: 'Normal Guy',
+          message: 'Real Person',
           count: 0,
         }
       },
