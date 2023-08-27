@@ -368,7 +368,7 @@
 
     <div class="mx-3 mt-5" id="project-catalog">
 
-      <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 688.4px;">
+      <div class="row grid" data-masonry='{"percentPosition": true }' style="position: relative; height: 688.4px;">
 
         <div class="col-sm-6 col-lg-4 mb-4 masonary-project" style="position: absolute; left: 0%; top: 0px;">
           <div class="card text-bg-dark text-start">
@@ -565,7 +565,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
     integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous" sync></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
   <script>
@@ -574,6 +574,13 @@
     gtag('js', new Date());
 
     gtag('config', 'G-DY2VHVJB8L');
+  </script>
+
+  <script>
+    setTimeout(function () {
+      var msnry = new Masonry('.grid');
+      msnry.layout();
+    }, 1000);
   </script>
 
   <script type="module">
