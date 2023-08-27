@@ -112,41 +112,18 @@
 
     <h1>Professional Experience</h1>
 
-    <div class="row" id="skills-figures">
-
-      <figure class="figure mb-5 col-lg-3 col-md-6 icons position-relative">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-info">
-          More Details
-          <span class="visually-hidden">unread messages</span>
-        </span>
-        <img src="../assets/img/Untitled design.png" class="figure-img img-fluid rounded" alt="HTML,CSS,JS,PHP,MySQL">
-        <hr>
-        <figcaption class="figure-caption" title="Website Development">Website Development</figcaption>
-      </figure>
-
-      <figure class="figure mb-5 col-lg-3 col-md-6 icons position-relative">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary">
-          More Details
-          <span class="visually-hidden">unread messages</span>
-        </span>
-        <img src="../assets/img/Untitled (600 × 600px).png" class="figure-img img-fluid rounded"
-          alt="PHP,C#,Java,Javascript,Python">
-        <hr>
-        <figcaption class="figure-caption" title="General Problem Solving">General Problem Solving</figcaption>
-      </figure>
-
-      <figure class="figure mb-5 col-lg-3 col-md-6 icons position-relative">
-        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-success">
-          More Details
-          <span class="visually-hidden">unread messages</span>
-        </span>
-        <img src="../assets/img/Untitled design (1).png" class="figure-img img-fluid rounded" alt="">
-        <hr>
-        <figcaption class="figure-caption text-truncate" title="Cross Platform Application Development">Cross Platform
-          Application Development</figcaption>
-      </figure>
-
-    </div>
+    <div class="accordion accordion-flush container py-5" id="accordionFlushExample">
+      <div class="accordion-item" v-for="exp in experiences">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            {{ exp }}
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+    </div> 
   </div>
 
   <hr>
@@ -294,7 +271,8 @@
   </script> -->
 
   <script type="module">
-    import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
+    import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js';
+    import { experience_data } from '../assets/data/data.js';
 
     createApp({
       mounted() {
@@ -302,7 +280,7 @@
       },
       data() {
         return {
-
+          experiences: experience_data,
         }
       },
       methods: {
