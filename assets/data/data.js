@@ -223,7 +223,7 @@ var experience_data = [
         "desc": "Working with children aged 5-15 to teach them the fundamentals of coding and programming. Teaching them how to create their own games and animations using Scratch, Python, and JavaScript.",
         "website": "https://www.codeninjas.com/",
         "logo":"../assets/codeninjas.png",
-        "duration": "2023 - Present",
+        "duration": "2023 - ",
         "location": "London, UK",
         "tags":{
             "1": "scratch",
@@ -254,7 +254,7 @@ var experience_data = [
         "desc": "Freelance Website Developer/Designer for clients across the world. Working with mainly WordPress and WooCommerce with an emphasis on customizability and responsiveness. Integrating various plugins and APIs to achieve the desired functionality. Custom Websites also developed from scratch using HTML, CSS, JS, Bootstrap, PHP, etc.",
         "website": "https://www.upwork.com/freelancers/~01113a66916e3b3995",
         "logo":"../assets/Upwork.png",
-        "duration": "2020 - Present",
+        "duration": "2020 - ",
         "location": "Remote",
         "tags":{
             "3": "woocommerce",
