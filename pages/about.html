@@ -115,7 +115,11 @@
     <div class="accordion accordion-flush container py-5 " id="accordionFlushExample">
       <div class="accordion-item text-bg-dark" v-for="e in experiences">
         <h2 class="accordion-header">
+<<<<<<< HEAD
           <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+=======
+          <button class="accordion-button bg-info-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+>>>>>>> 5aa4f239e51f7ec2cd50e5ed5a0b7f3cb6e53382
             <div class="row w-100 ">
              <span class="float-start col w-auto"><b>{{ e.title }}</b> @ {{ e.company }}</span>
              <span class="float-end w-auto col-2"><b>{{ e.duration }}</b></span>
@@ -123,6 +127,7 @@
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+<<<<<<< HEAD
 
           <div class="accordion-body text-start">
             <div class="row w-100 ">
@@ -138,6 +143,9 @@
               <span v-for="tag in e.tags" class="badge rounded-pill text-bg-secondary">{{ tag }}</span>
             </div>
           </div>
+=======
+          <div class="accordion-body text-start">{{ e.desc }}</div>
+>>>>>>> 5aa4f239e51f7ec2cd50e5ed5a0b7f3cb6e53382
         </div>
       </div>
     </div> 
@@ -296,6 +304,7 @@
     
     import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js';
     
+<<<<<<< HEAD
     import experience_data  from '../assets/data/experience_data.js';
     import certificates_data from '../assets/data/certificates_data.js'; 
 
@@ -305,6 +314,13 @@
         this.certifications = certificates_data
 
         console.log(this.experiences, this.certifications);
+=======
+    import { experience_data } from '../assets/data/data.js';
+    createApp({
+      mounted() {
+        this.experiences = experience_data
+        console.log(this.experiences)
+>>>>>>> 5aa4f239e51f7ec2cd50e5ed5a0b7f3cb6e53382
       },
       data() {
         return {
