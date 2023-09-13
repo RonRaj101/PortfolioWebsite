@@ -1,23 +1,5 @@
 export var certificates_data = [
-    {
-        "title": "Advanced Diploma for Software Engineering (ADSE)",
-        "provider": "Aptech",
-        "link": "../assets/misc/adse_degree.pdf",
-        "logo":"../assets/img/Courses + Certifications/aptech.png",
-        "completed": "2021",
-        "location": "Karachi, Pakistan",
-        "tags":{
-            "1": "C Programming",
-            "2":"ASP.NET",
-            "3":"C#",
-            "4":"SQL",
-            "5":"Java",
-            "6":"OOP",
-            "7":"Web Development",
-            "8":"SDLC",
-            "9":"Android + iOS Development",
-        }
-    },
+    
     {
         "title": "Responsive Web Design",
         "provider": "freeCodeCamp",

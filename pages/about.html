@@ -149,9 +149,9 @@
 
     <h1>Certifications & Awards</h1>
 
-    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3 container mx-2 my-3">
+    <div class="row g-3 container-fluid mx-2 my-3">
       
-      <div class="col" v-for="cert in certifications">
+      <div class="col-6 col-lg-4 col-md-6" v-for="cert in certifications">
         <div class="card shadow-sm text-bg-dark border p-3">
           <img :src="cert.logo" class="bd-placeholder-img card-img-top" width="100%" height="225">
           
@@ -179,13 +179,25 @@
 
     <h1>Education</h1>
 
-    <ul class="list-group list-group-flush container">
-      <li class="list-group-item">MDX</li>
-      <li class="list-group-item">ADSE</li>
-      <li class="list-group-item">Cedar</li>
-      <li class="list-group-item">SMCS</li>
-    </ul>
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-undergrad-tab" data-bs-toggle="pill" data-bs-target="#v-pills-undergrad" type="button" role="tab" aria-controls="v-pills-undergrad" aria-selected="true">Undergraduate</button>
+        <button class="nav-link" id="v-pills-alvl-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alvl" type="button" role="tab" aria-controls="v-pills-alvl" aria-selected="false">A-Level</button>
+        
+        <button class="nav-link" id="v-pills-olvl-tab" data-bs-toggle="pill" data-bs-target="#v-pills-olvl" type="button" role="tab" aria-controls="v-pills-olvl" aria-selected="false">O-Level</button>
+        <button class="nav-link" id="v-pills-school-tab" data-bs-toggle="pill" data-bs-target="#v-pills-school" type="button" role="tab" aria-controls="v-pills-school" aria-selected="false">School</button>
+        <button class="nav-link" id="v-pills-other-tab" data-bs-toggle="pill" data-bs-target="#v-pills-other" type="button" role="tab" aria-controls="v-pills-other" aria-selected="false">Other</button>
 
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-undergrad" role="tabpanel" aria-labelledby="v-pills-undergrad-tab" tabindex="0">
+          
+        </div>
+        <div class="tab-pane fade" id="v-pills-alvl" role="tabpanel" aria-labelledby="v-pills-alvl-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="v-pills-olvl" role="tabpanel" aria-labelledby="v-pills-olvl-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="v-pills-school" role="tabpanel" aria-labelledby="v-pills-school-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="v-pills-other" role="tabpanel" aria-labelledby="v-pills-other-tab" tabindex="0">...</div>
+      </div>
+    </div>
     
   </div>
 
@@ -197,6 +209,7 @@
 
     <figure class="figure pt-5 p-5 bg-light">
       <img src="../assets/misc/ovolu-qr.png" class="figure-img img-fluid rounded" alt="...">
+      <hr>
       <figcaption class="figure-caption mt-3"><a href="https://ovolu.com/p/ronit-rai" target="_blank">https://ovolu.com/p/ronit-rai</a></figcaption>
     </figure>
     
