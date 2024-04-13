@@ -175,6 +175,17 @@ Scrollbar
   box-shadow: 0 0 11px #fff;
 }
 
+#cert-list {
+  list-style: none;
+}
+
+#cert-list > li {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1));
+}
+
 @media screen and (max-width: 767px) {
   #changing-text {
     color: yellow;

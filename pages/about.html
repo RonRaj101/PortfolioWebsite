@@ -11,7 +11,7 @@
   <title>About Me | Ronit Rai</title>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1971489037659922"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -45,10 +45,10 @@
               class="bi bi-arrow-return-left"></i> Go Back </a>
           <nav class="nav nav-masthead" style="justify-content: center;" id="nav-active">
 
-            <a class="nav-link fw-bold py-1 px-0" href="#">Home</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#about-1">About</a>
             <a class="nav-link fw-bold py-1 px-0" href="#experiences">Experiences</a>
+
             <a class="nav-link fw-bold py-1 px-0" href="#links">Links</a>
+            <a class="nav-link fw-bold py-1 px-0" href="#education">Education</a>
             <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
           </nav>
         </div>
@@ -59,8 +59,8 @@
 
 
         <div class="row icons-row p-0" style="color: transparent;">
-            <a style="text-align:center; color: blue;" href="#project-catalog" class="col icons"><i
-                    class="bi bi-arrow-bar-down"></i></a>
+          <a style="text-align:center; color: blue;" href="#project-catalog" class="col icons"><i
+              class="bi bi-arrow-bar-down"></i></a>
         </div>
         <br>
 
@@ -80,25 +80,33 @@
     <div class="container col-xxl-12 px-4 py-2">
       <div class="row flex-lg-row-reverse align-items-center g-5">
         <div class="col-12 col-sm-12 col-lg-4">
-          <img src="../assets/img/img-portrait.jpg" class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes" loading="lazy">
+          <img src="../assets/img/img-portrait.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+            loading="lazy">
         </div>
         <div class="col-lg-8 col-sm-12 text-start">
 
           <p class="lead">
           <h4 class="card-title">Who is Ronit?</h4>
-          <p class="card-text">Ronit is a <b>human</b>, who has a <b>positive outlook on life</b> and has clarity over what he wants to <b>acheive in life</b>. He is <b>curious</b> about almost everything but fulfills it discreetly since he is what we call an 'introvert'. 
-            But Ronit is <b>not shy</b>, he is just <b>very selective</b> about the people he opens up to. 
-            Apart from that, he can be considered <b>very handsome</b> (false), <b>charming</b> (another lie) and <b>humourous</b> (biggest lie).
+          <p class="card-text">Ronit is a <b>human</b>, who has a <b>positive outlook on life</b> and has clarity over
+            what he wants to <b>acheive in life</b>. He is <b>curious</b> about almost everything but fulfills it
+            discreetly since he is what we call an 'introvert'.
+            But Ronit is <b>not shy</b>, he is just <b>very selective</b> about the people he opens up to.
+            Apart from that, he can be considered <b>very handsome</b> (false), <b>charming</b> (another lie) and
+            <b>humourous</b> (biggest lie).
           </p>
           <h4 class="card-title">What does he do?</h4>
           <p class="card-text">
-            Ronit is primarily a <b>Full Stack Website Developer</b> with extensive <b>freelance experience</b>. Recently <b>graduated</b> from Middlesex University with a degree in <b>Information Technology</b>, looking to <b>expand his skill-base</b> and <b>gain valuable professional experience</b>. Looking to go <b>forward & onward</b>.
+            Ronit is primarily a <b>Full Stack Website Developer</b> with extensive <b>freelance experience</b>.
+            Recently <b>graduated</b> from Middlesex University with a degree in <b>Information Technology</b>, looking
+            to <b>expand his skill-base</b> and <b>gain valuable professional experience</b>. Looking to go <b>forward &
+              onward</b>.
           </p>
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="../assets/misc/CVTechnicalUpdated.pdf" target="_blank" download="CV(Ronit Rai)"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">  Download CV</button></a>
-            <a href="#contact"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Me</button></a>
+            <a href="../assets/misc/CVTechnicalUpdated.pdf" target="_blank" download="CV(Ronit Rai)"><button
+                type="button" class="btn btn-primary btn-lg px-4 me-md-2"> Download CV</button></a>
+            <a href="#contact"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact
+                Me</button></a>
           </div>
         </div>
       </div>
@@ -115,10 +123,11 @@
     <div class="accordion accordion-flush container py-5 " id="accordionFlushExample">
       <div class="accordion-item text-bg-dark" v-for="e in experiences">
         <h2 class="accordion-header">
-          <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             <div class="row w-100 ">
-             <span class="float-start col w-auto"><b>{{ e.title }}</b> @ {{ e.company }}</span>
-             <span class="float-end w-auto col-2"><b>{{ e.duration }}</b></span>
+              <span class="float-start col w-auto"><b>{{ e.title }}</b> @ {{ e.company }}</span>
+              <span class="float-end w-auto col-2"><b>{{ e.duration }}</b></span>
             </div>
           </button>
         </h2>
@@ -128,11 +137,11 @@
             <div class="row w-100 ">
               <span class="float-end w-auto col">
                 <img class="img-responsive" width="32" height="32" :src="e.logo" :alt="e.company">
-               
+
               </span>
               <span class="float-start col-2 w-auto"><b>{{ e.location }}</b> </span>
-              
-             </div>
+
+            </div>
             {{ e.desc }}
             <div class="">
               <span v-for="tag in e.tags" class="badge rounded-pill text-bg-secondary">{{ tag }}</span>
@@ -140,36 +149,136 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
 
   <hr>
 
   <div id="links" class="mt-5 py-4">
 
-    <h1>Certifications & Awards</h1>
+    <h1>Certifications</h1>
 
-    <div class="row g-3 container-fluid mx-2 my-3">
-      
-      <div class="col-6 col-lg-4 col-md-6" v-for="cert in certifications">
-        <div class="card shadow-sm text-bg-dark border p-3">
-          <img :src="cert.logo" class="bd-placeholder-img card-img-top" width="100%" height="225">
-          
-          <div class="card-body">
-            <p class=" text-truncate" :title="cert.title">{{ cert.title }}</p>
-            <small class="text-body-dark">{{ cert.location }}</small>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <a :href="cert.link" target="_blank"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
-              </div>
-              <small class="text-body-dark">{{ cert.completed }}</small>
-            </div>
+    <div class="container-fluid">
+
+      <div class="row g-4 py-5">
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="J.P. Morgan"
+              src="https://media.licdn.com/dms/image/D560BAQH8RQFJh-UFkQ/company-logo_100_100/0/1680549408905/theforage_logo?e=2147483647&amp;v=beta&amp;t=I2LGBzrlw6F8sA91R8XtcaJc7yf7MFxTaLPE4sGWGmI">
           </div>
+          <h3 class="fs-6">J.P. Morgan</h3>
+          <p>Software Engineering Job Simulation</p>
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_kG3xeXb5nfEiuBgub_1709119687139_completion_certificate.pdf?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
         </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="Microsoft" 
+              src="https://media.licdn.com/dms/image/C560BAQE88xCsONDULQ/company-logo_100_100/0/1630652622688/microsoft_logo?e=2147483647&v=beta&t=4ft1hh_UdO2TMuqRWlFPHTTr2B3BN0E2LmTE6tEYwJI">
+          </div>
+          <h3 class="fs-6">Microsoft x LinkedIn</h3>
+          <p>Career Essentials in Software Development</p>
+          <a href="https://www.linkedin.com/learning/certificates/709a589348ef32db30d0b204805e44bafc8c06ff5e71ec441a30b9b3c8f4d53d?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="HackerRank" 
+              src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=2147483647&v=beta&t=rR_qmdtP6k2KdZi8KLB9vRs38JzYfjCH2YuHvuWyCMM">
+          </div>
+          <h3 class="fs-6">HackerRank</h3>
+          <p>Java Certification</p>
+          <a href="https://www.linkedin.com/learning/certificates/709a589348ef32db30d0b204805e44bafc8c06ff5e71ec441a30b9b3c8f4d53d?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="HackerRank" 
+              src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=2147483647&v=beta&t=rR_qmdtP6k2KdZi8KLB9vRs38JzYfjCH2YuHvuWyCMM">
+          </div>
+          <h3 class="fs-6">HackerRank</h3>
+          <p>Javascript Certification</p>
+          <a href="https://www.hackerrank.com/certificates/de4881142dc9?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="freeCodeCamp" 
+              src="https://media.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=2147483647&v=beta&t=pNR4mWi0JI9IZ7ibIhQ6XE64WuGKJMfhCREZqSDMmwU">
+          </div>
+          <h3 class="fs-6">freeCodeCamp</h3>
+          <p>Javascript Certification</p>
+          <a href="https://freecodecamp.org/certification/ronit_rai/javascript-algorithms-and-data-structures?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="HackerRank" 
+              src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=2147483647&v=beta&t=rR_qmdtP6k2KdZi8KLB9vRs38JzYfjCH2YuHvuWyCMM">
+          </div>
+          <h3 class="fs-6">HackerRank</h3>
+          <p>SQL Certification</p>
+          <a href="https://www.hackerrank.com/certificates/d8137ce826ce?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="HackerRank" 
+              src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_100_100/0/1705561459405/hackerrank_logo?e=2147483647&v=beta&t=rR_qmdtP6k2KdZi8KLB9vRs38JzYfjCH2YuHvuWyCMM">
+          </div>
+          <h3 class="fs-6">HackerRank</h3>
+          <p>CSS Certification</p>
+          <a href="https://www.hackerrank.com/certificates/26fd3074ffc5?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        <div class="feature col-lg-2 col-md-3 ">
+          <div class="feature-icon d-inline-flex align-items-start justify-content-start text-bg-primary bg-gradient fs-2 mb-3">
+            <img
+              alt="freeCodeCamp" 
+              src="https://media.licdn.com/dms/image/C4E0BAQGLKj3JHcof0w/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=2147483647&v=beta&t=pNR4mWi0JI9IZ7ibIhQ6XE64WuGKJMfhCREZqSDMmwU">
+          </div>
+          <h3 class="fs-6">HackerRank</h3>
+          <p>CSS Certification</p>
+          <a href="https://www.freecodecamp.org/certification/ronit_rai/responsive-web-design?trk=public_profile_see-credential" target="_blank" class="icon-link d-inline-flex align-items-center">
+            <span>View Certificate</span>
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+          </a>
+        </div>
+
+        
+       
       </div>
 
-    </div>
 
+    </div>
   </div>
 
 
@@ -179,213 +288,185 @@
 
     <h1>Education</h1>
 
-    <div class="container d-flex align-items-start w-75">
-      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active" id="v-pills-undergrad-tab" data-bs-toggle="pill" data-bs-target="#v-pills-undergrad" type="button" role="tab" aria-controls="v-pills-undergrad" aria-selected="true">Undergraduate</button>
-        <button class="nav-link" id="v-pills-alvl-tab" data-bs-toggle="pill" data-bs-target="#v-pills-alvl" type="button" role="tab" aria-controls="v-pills-alvl" aria-selected="false">A-Level</button>
-        
-        <button class="nav-link" id="v-pills-olvl-tab" data-bs-toggle="pill" data-bs-target="#v-pills-olvl" type="button" role="tab" aria-controls="v-pills-olvl" aria-selected="false">O-Level</button>
-        <button class="nav-link" id="v-pills-school-tab" data-bs-toggle="pill" data-bs-target="#v-pills-school" type="button" role="tab" aria-controls="v-pills-school" aria-selected="false">School</button>
-        <button class="nav-link" id="v-pills-other-tab" data-bs-toggle="pill" data-bs-target="#v-pills-other" type="button" role="tab" aria-controls="v-pills-other" aria-selected="false">Other</button>
-      </div>
-      <div class="tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-undergrad" role="tabpanel" aria-labelledby="v-pills-undergrad-tab" tabindex="1">
-
-          <div class="card text-bg-dark border border-danger-subtle text-start">
-            <h5 class="card-header">Middlesex University</h5>
-            <div class="card-body">
-              <h5 class="card-title">BSc Information Technology</h5>
-              <p class="card-text">Graduated in 2023 with an Upper Second Class Honors</p>
-              
-            </div>
+    <div class="list-group-flush container-sm text-start">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/mdx.png" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Middlesex University</h6>
+            <p class="mb-0 opacity-75">BSc Information Technology (3rd Year)</p>
           </div>
-
+          <small class="opacity-50 text-nowrap">2022-2023</small>
         </div>
-        <div class="tab-pane fade" id="v-pills-alvl" role="tabpanel" aria-labelledby="v-pills-alvl-tab" tabindex="0">
-          <div class="card text-bg-dark border border-primary text-start">
-            <h5 class="card-header text-underline">Cedar College</h5>
-            <div class="card-body">
-              <h5 class="card-title">A-Levels </h5>
-              <p class="card-text">Subjects: Mathematics, Physics and Computer Science. Graduated in 2022 with an C,B,A Grade respectively</p>
-              
-            </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/aptech.png" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Aptech Computer Education</h6>
+            <p class="mb-0 opacity-75">Advanced Diploma in Software Engineering</p>
           </div>
+          <small class="opacity-50 text-nowrap">2018-2021</small>
         </div>
-        <div class="tab-pane fade" id="v-pills-olvl" role="tabpanel" aria-labelledby="v-pills-olvl-tab" tabindex="0">
-          
-            <div class="card text-bg-dark border border-primary-subtle text-start">
-              <h5 class="card-header text-underline">St Michaels Convent School</h5>
-              <div class="card-body">
-                <h5 class="card-title">O-Levels</h5>
-                <p class="card-text">Subjects:Mathematics, Physics, Chemistry, Computer Science, Additional Mathematics, English Language, Urdu, Religious Studies, Pakistan Studies. Finished in 2020 with an A*, 2A's, 5B's and C Grades</p>
-                
-              </div>
-            </div>
-          
-        </div>
-        <div class="tab-pane fade" id="v-pills-school" role="tabpanel" aria-labelledby="v-pills-school-tab" tabindex="0">
-          <div class="card text-bg-dark border border-light-subtle text-start">
-            <h5 class="card-header text-underline">St Michaels Convent School</h5>
-            <div class="card-body">
-              <h5 class="card-title">Junior to High School</h5>
-              <p class="card-text">Started in 2008 and ended in 2017</p>
-              
-            </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/cedar.png" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Cedar College</h6>
+            <p class="mb-0 opacity-75">A-Levels </p>
           </div>
+          <small class="opacity-50 text-nowrap">2020-2022</small>
         </div>
-        <div class="tab-pane fade" id="v-pills-other" role="tabpanel" aria-labelledby="v-pills-other-tab" tabindex="0">
-          <div class="card text-bg-dark border border-warning text-start">
-            <h5 class="card-header text-underline">Aptech Education</h5>
-            <div class="card-body">
-              <h5 class="card-title">Advanced Diploma in Software Engineering</h5>
-              <p class="card-text">Graduated in 2021 with Merit. <br>
-                <ul>
-                  <li> Website Design/Development</li>
-                  <li>Mobile/Desktop Application Development</li> 
-                  <li> Backend & Database Design</li> 
-                  <li> SDLC</li>
-                </ul> 
-              </p>
-              
-            </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/smcs.png" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Saint Michael's Convent Schools</h6>
+            <p class="mb-0 opacity-75">Primary, Secondary Schooling & O-Levels</p>
           </div>
+          <small class="opacity-50 text-nowrap">2008-2020</small>
         </div>
-      </div>
+      </a>
     </div>
-    
-  
-
-  <hr>
-
-  <div id="links" class="mt-5 py-4">
-
-    <h1>Business Card</h1>
-
-    <figure class="figure pt-5 p-5 bg-light">
-      <img src="../assets/misc/ovolu-qr.png" class="figure-img img-fluid rounded" alt="...">
-      <hr>
-      <figcaption class="figure-caption mt-3"><a href="https://ovolu.com/p/ronit-rai" target="_blank">https://ovolu.com/p/ronit-rai</a></figcaption>
-    </figure>
-    
-  </div>
 
 
+    <hr>
 
-  <footer class="mt-auto text-white-50">
-    <!-- Contact Section -->
-    <div class="row p-5 " id="contact">
+    <div id="links" class="mt-5 py-4">
 
-      <div class="col-lg-6 col-md-12">
-        <h1>Contact Me</h1>
-        <div class="row mx-1 my-5">
-          <div class="col">
-            <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
-              <figure class="figure">
-                <img src="../assets/email.png" class="figure-img img-fluid rounded contact-img icons" alt="email">
-                <figcaption class="figure-caption text-center">Email</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col">
-            <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
-              <figure class="figure">
-                <img src="../assets/instagram.png" class="figure-img img-fluid rounded contact-img icons"
-                  alt="instagram">
-                <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
-              </figure>
-            </a>
-          </div>
-        </div>
-      </div>
+      <h1>Business Card</h1>
 
-      <div class="col-lg-6 col-md-12" style="place-self: center;">
-        <h1>Other Links</h1>
-        <div class="row mx-1 my-5">
-          <div class="col">
-            <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
-              <figure class="figure">
-                <img src="../assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons" alt="linkedin">
-                <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col">
-            <a href="https://github.com/RonRaj101" target="_blank">
-              <figure class="figure">
-                <img src="../assets/github.png" class="figure-img img-fluid rounded contact-img icons" alt="github">
-                <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
-              </figure>
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <a href="https://www.fiverr.com/ronitraj101" target="_blank">
-              <figure class="figure">
-                <img src="../assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons" alt="fiverr">
-                <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
-              </figure>
-            </a>
-          </div>
-
-
-          <div class="col">
-            <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
-              <figure class="figure">
-                <img src="../assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons" alt="upwork">
-                <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
-              </figure>
-            </a>
-          </div>
-        </div>
-      </div>
+      <figure class="figure pt-5 p-5 bg-light">
+        <img src="../assets/misc/ovolu-qr.png" class="figure-img img-fluid rounded" alt="...">
+        <hr>
+        <figcaption class="figure-caption mt-3"><a href="https://ovolu.com/p/ronit-rai"
+            target="_blank">https://ovolu.com/p/ronit-rai</a></figcaption>
+      </figure>
 
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-DY2VHVJB8L');
-  </script>
 
-  <script type="module">
-    
-    import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js';
-    
+    <footer class="mt-auto text-white-50">
+      <!-- Contact Section -->
+      <div class="row p-5 " id="contact">
 
-    import experience_data  from '../assets/data/experience_data.js';
-    import certificates_data from '../assets/data/certificates_data.js'; 
+        <div class="col-lg-6 col-md-12">
+          <h1>Contact Me</h1>
+          <div class="row mx-1 my-5">
+            <div class="col">
+              <a href="mailto:ronitrai.rk@gmail.com" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/email.png" class="figure-img img-fluid rounded contact-img icons" alt="email">
+                  <figcaption class="figure-caption text-center">Email</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://www.instagram.com/ronitrai.rk/" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/instagram.png" class="figure-img img-fluid rounded contact-img icons"
+                    alt="instagram">
+                  <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
 
-    createApp({
-      mounted() {
-        this.experiences = experience_data
-        this.certifications = certificates_data
+        <div class="col-lg-6 col-md-12" style="place-self: center;">
+          <h1>Other Links</h1>
+          <div class="row mx-1 my-5">
+            <div class="col">
+              <a href="https://www.linkedin.com/in/ronit-rai/" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/linkedin.png" class="figure-img img-fluid rounded contact-img icons"
+                    alt="linkedin">
+                  <figcaption class="figure-caption text-center">LinkedIn Profile</figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col">
+              <a href="https://github.com/RonRaj101" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/github.png" class="figure-img img-fluid rounded contact-img icons" alt="github">
+                  <figcaption class="figure-caption text-center">GitHub Repository</figcaption>
+                </figure>
+              </a>
+            </div>
 
-        console.log(this.experiences, this.certifications);
+          </div>
 
-      },
-      data() {
-        return {
-          experiences: experience_data,
-          certifications: certificates_data
+          <div class="row">
+            <div class="col">
+              <a href="https://www.fiverr.com/ronitraj101" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/fiverr.png" class="figure-img img-fluid rounded contact-img icons" alt="fiverr">
+                  <figcaption class="figure-caption text-center">Fiverr Profile</figcaption>
+                </figure>
+              </a>
+            </div>
+
+
+            <div class="col">
+              <a href="https://www.upwork.com/freelancers/~01113a66916e3b3995" target="_blank">
+                <figure class="figure">
+                  <img src="../assets/Upwork.png" class="figure-img img-fluid rounded contact-img icons" alt="upwork">
+                  <figcaption class="figure-caption text-center">Upwork Profile</figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DY2VHVJB8L"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-DY2VHVJB8L');
+    </script>
+
+    <script type="module">
+
+      import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js';
+
+
+      import experience_data from '../assets/data/experience_data.js';
+      import certificates_data from '../assets/data/certificates_data.js';
+
+      createApp({
+        mounted() {
+          this.experiences = experience_data
+          this.certifications = certificates_data
+
+          console.log(this.experiences, this.certifications);
+
+        },
+        data() {
+          return {
+            experiences: experience_data,
+            certifications: certificates_data
+          }
+        },
+        methods: {
+
         }
-      },
-      methods: {
-
-      }
-    }).mount('#app')
-  </script>
+      }).mount('#app')
+    </script>
 </body>
 
 </html>
