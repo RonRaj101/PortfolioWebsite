@@ -209,6 +209,37 @@ var project_data = [
             "1":"other",
             "2": "scripting"
         }
+    },
+
+    {
+        "name": "Founder Equity Calculator",
+        "desc": "A simple web application that calculates the equity distribution among the founders of a startup based on their contributions.",
+        "images":{
+            "main": "../assets/img/Projects/Founder Equity Calculator/undraw_Calculator_re_alsc.png",
+            "secondary": ""
+        },
+        "links":{
+            "1": {
+                "link_name":"Calculator Preview", 
+                "link_url": "https://ronraj101.github.io/FounderEquityCalculator/"
+            },
+            "2": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/FounderEquityCalculator"
+            }
+        },
+        "tools":{
+            "1": "vue",
+            "2":"pinia",
+            "3": "web-app",
+            "4":"github",
+            "5":"bootstrap",
+            "6":"equity-calculator",
+        },
+        "tags":{
+            "1":"webdev",
+            "2": "other"
+        }
     }
 
    
