@@ -3,8 +3,8 @@ var project_data = [
         "name": "Muhafizz",
         "desc": "Muhafizz is a revolutionary application designed to prioritise your safety and security by keeping you up-to-date with events and incidents that may be potentially life-threatening.",
         "images":{
-            "main": "../assets/img/Projects/Muhafizz/website-img.png",
-            "secondary": "../assets/img/Projects/Muhafizz/muhafizz login cover.jpeg"
+            "main": "../assets/img/Projects/Muhafizz/website-img.webp",
+            "secondary": "../assets/img/Projects/Muhafizz/muhafizz login cover.webp"
         },
         "links":{
             "1": {
@@ -46,8 +46,8 @@ var project_data = [
         "name": "FrameInk",
         "desc": "FrameInk is your one-stop-shop for all your design and development needs. We serve clients across the world, providing them with our expertise in everything from game development and web/mobile app development, to cutting-edge technologies like machine learning and virtual/augmented reality.",
         "images":{
-            "main": "../assets/img/Projects/FrameInk/frameink.webp",
-            "secondary": "../assets/img/Projects/FrameInk/website-img.png"
+            "main": "../assets/img/Projects/FrameInk/website-img.webp",
+            "secondary": "../assets/img/Projects/FrameInk/website-img.webp"
         },
         "links":{
             "1": {
@@ -77,8 +77,8 @@ var project_data = [
         "name": "BarterMate",
         "desc": "BarterMate is a cutting-edge mobile application that provides a secure e-commerce platform for users to easily trade or barter commodities they no longer require. The app effectively tackles the critical issue of electronic waste.",
         "images":{
-            "main": "../assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.png",
-            "secondary": "../assets/img/Projects/BarterMate/8309.jpg"
+            "main": "../assets/img/Projects/BarterMate/DALL·E 2023-08-08 15.24.32.webp",
+            "secondary": "../assets/img/Projects/BarterMate/8309.webp"
         },
         "links":{
             "1": {
@@ -117,7 +117,7 @@ var project_data = [
         "name": "Pandemic Board Game",
         "desc": "A Command Line Implementation of the Pandemic Board Game. Complete with all features and an A.I Agent.",
         "images":{
-            "main": "../assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.png",
+            "main": "../assets/img/Projects/Pandemic Board Game/DALL·E 2023-08-08 15.12.18.webp",
             "secondary": ""
         },
         "links":{
@@ -149,7 +149,7 @@ var project_data = [
         "name": "Digit Recognition",
         "desc": "A Machine Learning Model that can recognize handwritten digits with high accuracy. UCI ML Repository Dataset used.",
         "images":{
-            "main": "../assets/img/Projects/UCI Digit Recognition/DALL·E 2023-08-17 15.53.54 - A Formless AI recognises a numeric digit from a grid of scrambled data, digital painting.png",
+            "main": "../assets/img/Projects/UCI Digit Recognition/DALL·E 2023-08-17 15.53.54 - A Formless AI recognises a numeric digit from a grid of scrambled data, digital painting.webp",
             "secondary": ""
         },
         "links":{
@@ -182,7 +182,7 @@ var project_data = [
         "name": "Asteroid Mineablity Prediction",
         "desc": "A Weka Data Prediction Model that can predict the mineability of an asteroid based on its physical properties. Asternak API & Dataset used.",
         "images":{
-            "main": "../assets/img/Projects/Asterank Research/craiyon_202213_Mining_on_a_small_but_valuable_asteroid.png",
+            "main": "../assets/img/Projects/Asterank Research/craiyon_202213_Mining_on_a_small_but_valuable_asteroid.webp",
             "secondary": ""
         },
         "links":{
@@ -215,7 +215,7 @@ var project_data = [
         "name": "Founder Equity Calculator",
         "desc": "A simple web application that calculates the equity distribution among the founders of a startup based on their contributions.",
         "images":{
-            "main": "../assets/img/Projects/Founder Equity Calculator/undraw_Calculator_re_alsc.png",
+            "main": "../assets/img/Projects/Founder Equity Calculator/undraw_Calculator_re_alsc.webp",
             "secondary": ""
         },
         "links":{

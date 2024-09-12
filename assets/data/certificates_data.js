@@ -34,7 +34,7 @@ export var certificates_data = [
         "title": "SQL (Basic)",
         "provider": "Hackerrank",
         "link": "https://www.hackerrank.com/certificates/d8137ce826ce",
-        "logo":"../assets/img/Courses + Certifications/HackerRank_Iconx.png",
+        "logo":"../assets/img/Courses + Certifications/HackerRank_Iconx.webp",
         "completed": "2022",
         "location": "Online",
         "tags":{
