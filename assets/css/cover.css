@@ -84,22 +84,22 @@ Scrollbar
 }
 
 #hero-intro {
-  background: url("../img/download-flipped.svg") no-repeat left,
-    url("../img/download-right.svg") no-repeat right;
+  background: url("../img/download-flipped.png") no-repeat left,
+    url("../img/download-right.png") no-repeat right;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #hero-intro {
-    background: url("../img/download-flipped.svg") no-repeat left,
-      url("../img/download-right.svg") no-repeat right;
+    background: url("../img/download-flipped.png") no-repeat left,
+      url("../img/download-right.png") no-repeat right;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
   #hero-intro {
-    background: url("../img/download-center.svg") no-repeat center;
+    background: url("../img/download-center.png") no-repeat center;
     width: 100%;
   }
 }
