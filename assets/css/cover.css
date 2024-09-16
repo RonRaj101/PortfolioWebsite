@@ -291,7 +291,7 @@ body {
 }
 .bi {
   vertical-align: -0.125em;
-  fill: currentColor;
+  fill: whitesmoke;
 }
 .nav-scroller {
   position: relative;
