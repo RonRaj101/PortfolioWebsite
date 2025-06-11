@@ -79,7 +79,7 @@ p {
 #hero-intro {
   background: url("../img/matrixron.png") center no-repeat,
     url("../img/matrix-un.png") center repeat fixed;
-  background-size: contain, cover;
+  background-size: contain, contain;
   background-position: 0 100%, 0 0;
 
   /* Adjusted for better visibility */;
