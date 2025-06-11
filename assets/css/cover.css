@@ -45,7 +45,7 @@ p {
   font-size: smaller;
 }
 .container-wrapper {
-  min-height: 100vh;
+  height: 100vh;
 }
 #main-intro {
   margin-top: 15rem;
@@ -77,15 +77,29 @@ p {
   font-size: 2.5rem;
 }
 #hero-intro {
-  background: url("../img/download-flipped.webp") left no-repeat,
-    url("../img/download-right.webp") right no-repeat;
-  width: 100%;
+  background: url("../img/matrixron.png") center no-repeat,
+    url("../img/matrix-un.png") center no-repeat fixed;
+  width: auto;
+  background-size: contain, cover;
+  background-position: 0 100px, 0 0;
+  /* Adjusted for better visibility */;
+  /* Center vertically */
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #hero-intro {
-    background: url("../img/download-flipped.webp") left no-repeat,
-      url("../img/download-right.webp") right no-repeat;
-    width: 100%;
+
+
+@media screen and (max-width: 767px) {
+  #changing-text {
+    color: #ff0;
+    /* text-shadow: 2px 2px 2px #646464; */
+  }
+  #title-icons {
+    display: none;
+  }
+  #main-intro {
+    margin-top: 25rem;
+  }
+  #nav-active {
+    font-size: small;
   }
 }
 .card-title {
@@ -146,25 +160,7 @@ p {
   margin: 1rem;
   background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1));
 }
-@media screen and (max-width: 767px) {
-  #hero-intro {
-    background: url("../img/download-center.webp") center no-repeat;
-    width: 100%;
-  }
-  #changing-text {
-    color: #ff0;
-    /* text-shadow: 2px 2px 2px #646464; */
-  }
-  #title-icons {
-    display: none;
-  }
-  #main-intro {
-    margin-top: 25rem;
-  }
-  #nav-active {
-    font-size: small;
-  }
-}
+
 #skills-figures > figure {
   border-right: 1px solid #fff;
   margin: 0 auto;

@@ -48,11 +48,11 @@
         <p class="lead title-message">
           <span id="changing-text">{{ message }}</span> <br>
         </p>
-          <a aria-label="More About Me" class="nav-link text-center nav-link link-primary fw-bold py-1 px-0" href="pages/about.html">About Me 
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-in-up-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5"/>
-            <path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0z"/>
-          </svg></a>
+         
+          <div class="btn-group">
+            <a href="#about"><button type="button" class="btn btn-light btn px-4 me-md-2">Explore More</button></a>
+            <a href="#contact"><button type="button" class="btn btn-primary btn px-4">Get In Touch</button></a>
+          </div>
         <br>
       </main>
 
@@ -60,56 +60,53 @@
 
   </div>
 
+<br>
 
+  <!-- About Me -->
+   <div class="border-rounded" id="about">
 
-  <!-- <div class="border-rounded" id="about">
+    <h1 class="lh-1 mb-3 text-center"><small><small>a bit</small></small>  About Me</h1>
 
-    <h1 class="lh-1 mb-3 text-center">About Me</h1>
-
-    <div class="container col-xxl-12 px-4 py-2">
+    <div class="container col-xxl-12 px-4">
       <div class="row flex-lg-row-reverse align-items-center g-5">
-        <div class="col-12 col-sm-12 col-lg-4">
-          <img src="assets/img/IMG-20221107-WA0005~2-portrait.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"  loading="lazy">
-        </div>
-        <div class="col-lg-8 col-sm-12">
-          
+        <div class="col-lg text-start">
           <p class="lead">
-            <h4 class="card-title">A Bit About Me...</h4>
-            <p class="card-text">Well I have always been into technology, always been curious about the possibilities.
-              Since then I have been creating game levels/maps, modifying my favourite games which evolved into me
-              creating my own games using <b>Unity Framework</b>.
-              From then on, I learned Website Development basics to advanced which is the thing I specialize in now.
-              <br>
-              Additional Skills I learned include Desktop/Mobile Application Development, Databases and General Problem
-              Solving in Programming.
-              My Aim for the near future is to work with an emerging startup and help them using my existing skills, in
-              the process even acquiring more skills.
-              <br>
-              Eventually I would love to have my own startup, a game development studio or something which would allow
-              me to explore my creative side and introduce a new genre/type of product to the world.
-            </p>
-            <h4 class="card-title">Present Life...</h4>
-            <p class="card-text">Recently I completed my course <b>Information Technology</b> at <b>Middlesex University
-                London</b>.
-              I expect to recieve my degree in July 2023.
-              <br>
-              Before coming to the UK, I was in Pakistan where I started Freelance Work on <b>Fiverr</b> &
-              <b>Upwork</b>.
-              This gave me the confidence to showcase my skills and improve upon not only my technical skills but also
-              my soft skills such as Communication and Client Etiquette.
+          <!-- <h4 class="card-title">Short and Sweet Introduction</h4> -->
+          <p>
+            Have always been a <b>technology enthusiast</b>, started out as an <b>avid gamer</b>, 
+            that led me into the world of <b>modding and mapping</b>, 
+            which eventually transformed into a passion for <b>programming and engineering</b>.
 
-            </p>
           </p>
-           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          <p class="">
+            I am primarily a <b>Full Stack Website Developer</b> with extensive <b>freelance experience</b>.
+            Recent <b>graduate</b> from Middlesex University with a degree in <b>Information Technology</b>, looking
+            to <b>expand my skill-base</b> and <b>gain valuable professional experience</b>. 
+            Looking to go <b>forward & onward</b>.
+          </p>
+          <p class="">I am someone who has a <b>positive outlook on life</b> and has clarity over
+            what he wants to <b>acheive in life</b>. <b>Curious</b> about the nerdiest of stuff and ambitious to
+            keep learning and growing.
+            I am <b>not lazy</b>, just <b>a perfectionist</b> (excuse), like to do
+            things <b>right</b>. <br>
+            Apart from that, I can be considered <b>very handsome</b> (false), <b>charming</b> (another lie) and
+            <b>humourous</b> (biggest lie).
+          </p>
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="../assets/misc/CVTechnicalUpdated.pdf" target="_blank" download="CV(Ronit Rai)"><button
+                type="button" class="btn btn-primary btn-lg px-4 me-md-2">View CV</button></a>
+            <a href="#contact"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact
+                Me</button></a>
           </div>
         </div>
       </div>
     </div>
 
-  </div> -->
+  </div>
 
+
+   
   <hr>
 
   <div id="skills" class="mt-5">
@@ -185,8 +182,7 @@
       </figure>
 
       <figure class="figure mb-5 col-lg-4 col-md-6 icons position-relative">
-        <figcaption class="figure-caption text-truncate" title="Cross Platform Application Development">Cross Platform
-          Application Dev</figcaption>
+        <figcaption class="figure-caption text-truncate" title="Cross Platform Application Development">Cross Platform</figcaption>
         <hr>
         <p class="fig-skills-desc">Developing Mobile Applications from Scratch, Platform based Development and
           Cross-Platform Application Development Experience.</p>
@@ -602,8 +598,8 @@
       },
       data() {
         return {
-          messages: ['Curious Individual', 'Website Developer', 'Student', 'Internet Explorer'],
-          message: 'Real Person',
+          messages: ['Website Designer', 'Software Developer', 'Coding Instructor', 'Game Developer'],
+          message: 'Tech Nerd',
           count: 0,
         }
       },
