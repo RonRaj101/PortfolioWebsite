@@ -78,16 +78,26 @@ p {
 }
 #hero-intro {
   background: url("../img/matrixron.png") center no-repeat,
-    url("../img/matrix-un.png") center no-repeat fixed;
-  width: auto;
+    url("../img/matrix-un.png") center repeat fixed;
   background-size: contain, cover;
-  background-position: 0 100px, 0 0;
+  background-position: 0 100%, 0 0;
+
   /* Adjusted for better visibility */;
   /* Center vertically */
 }
-
+/* @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #hero-intro {
+    background: url("../img/download-flipped.webp") left no-repeat,
+      url("../img/download-right.webp") right no-repeat;
+    width: 100%;
+  }
+} */
 
 @media screen and (max-width: 767px) {
+  /* #hero-intro {
+    background: url("../img/download-center.webp") center no-repeat;
+    width: 100%;
+  } */
   #changing-text {
     color: #ff0;
     /* text-shadow: 2px 2px 2px #646464; */
