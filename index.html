@@ -24,7 +24,7 @@
   </style>
 </head>
 
-<body class="text-center text-bg-dark">
+<body class="text-center text-bg-dark" id="body">
 
   <div class="container-wrapper" id="hero-intro">
 
@@ -51,7 +51,7 @@
          
           <div class="btn-group">
             <a href="#about"><button type="button" class="btn btn-light btn px-4 me-md-2">Explore More</button></a>
-            <a href="#contact"><button type="button" class="btn btn-primary btn px-4">Get In Touch</button></a>
+            <a href="#contact"><button type="button" class="btn btn-dark btn px-4">Get In Touch</button></a>
           </div>
         <br>
       </main>
@@ -360,6 +360,45 @@
   <!--  Modal End -->
   <hr>
 
+  
+  <div id="experiences" class="mt-5">
+
+    <h1>Professional Experience</h1>
+
+    <div class="accordion accordion-flush container py-5 " id="accordionFlushExample">
+      <div class="accordion-item text-bg-dark" v-for="(e,count) in experiences">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse"
+            :data-bs-target="'#flush-collapse' + count" aria-expanded="false" :aria-controls="'#flush-collapse' + count">
+            <div class="row w-100 ">
+              <span class="float-start col w-auto"><b>{{ e.title }}</b> @ {{ e.company }}</span>
+              <span class="float-end w-auto col-2"><b>{{ e.duration }}</b></span>
+            </div>
+          </button>
+        </h2>
+        <div :id="'flush-collapse' + count" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+          <div class="accordion-body text-start">
+            <div class="row w-100 ">
+              <span class="float-end w-auto col">
+                <img class="img-responsive" width="32" height="32" :src="e.logo" :alt="e.company">
+
+              </span>
+              <span class="float-start col-2 w-auto"><b>{{ e.location }}</b> </span>
+
+            </div>
+            {{ e.desc }}
+            <div class="">
+              <span v-for="tag in e.tags" class="badge rounded-pill text-bg-secondary">{{ tag }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
   <div id="projects" class="mt-5 py-4">
 
     <h1>Featured Projects</h1>
@@ -488,31 +527,113 @@
 
   <hr>
 
+  
+  <div id="education" class="mt-5 py-4">
 
+    <h1>Education</h1>
+
+    <div class="list-group-flush container-sm text-start">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/mdx.webp" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Middlesex University</h6>
+            <p class="mb-0 opacity-75">BSc Information Technology (3rd Year)</p>
+          </div>
+          <small class="opacity-50 text-nowrap">2022-2023</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/aptech.webp" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Aptech Computer Education</h6>
+            <p class="mb-0 opacity-75">Advanced Diploma in Software Engineering</p>
+          </div>
+          <small class="opacity-50 text-nowrap">2018-2021</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/cedar.webp" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Cedar College</h6>
+            <p class="mb-0 opacity-75">A-Levels </p>
+          </div>
+          <small class="opacity-50 text-nowrap">2020-2022</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="../assets/smcs.webp" alt="twbs" width="32" height="32" class=" flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Saint Michael's Convent Schools</h6>
+            <p class="mb-0 opacity-75">Primary, Secondary Schooling & O-Levels</p>
+          </div>
+          <small class="opacity-50 text-nowrap">2008-2020</small>
+        </div>
+      </a>
+    </div>
+
+    </div>
 
   <footer class="mt-auto text-white-50">
     <!-- Contact Section -->
     <div class="row p-5 " id="contact">
 
       <div class="col-lg-6 col-md-12">
-        <h1>Contact Me</h1>
         <div class="row mx-1 my-5">
-          <div class="col">
-            <a aria-label="Email Address" href="mailto:ronitrai.rk@gmail.com" target="_blank">
-              <figure class="figure">
-                <img src="assets/email.webp" class="figure-img img-fluid rounded contact-img icons" alt="Mail Address">
-                <figcaption class="figure-caption text-center">Email</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="col">
-            <a aria-label="Instagram Profile" href="https://www.instagram.com/ronitrai.rk/" target="_blank">
-              <figure class="figure">
-                <img src="assets/instagram.webp" class="figure-img img-fluid rounded contact-img icons" alt="instagram">
-                <figcaption class="figure-caption text-center">Instagram Profile</figcaption>
-              </figure>
-            </a>
-          </div>
+           <div id="collaborate" class="mt-5">
+
+        <h1>Contact Form</h1>
+        <small>Open to all sorts of opportunities & projects</small>
+
+
+        <div class="collaborate-section row">
+            <div class=" p-5" id="collaborate-form">
+                <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScLm6Fohsop6fYeT6lAOJOU6rFf6FDuq-ROnHTQ1csLfb4fjQ/formResponse?pli=1"
+                target="_blank" method="POST">
+            
+                <div class="form-floating mb-3">
+                    <input type="name" class="form-control" name="entry.86485356" id="floatingInputDisabled" placeholder="Your Name"
+                        >
+                    <label for="floatingInputDisabled">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="entry.2031299490" id="floatingInputDisabled" placeholder="name@example.com"
+                        >
+                    <label for="floatingInputDisabled">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" name="entry.1504430708" placeholder="Lets create a way to save smells..." id="floatingTextarea2Disabled"
+                        style="height: 100px" ></textarea>
+                    <label for="floatingTextarea2Disabled">Proposal</label>
+                </div>
+                
+                <div class="form-floating">
+                    <select name="entry.31930389" class="form-select" id="floatingSelectDisabled"
+                        aria-label="Floating label disabled select example" >
+                        <option value="Research">Research</option>
+                        <option value="Development">Development</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="floatingSelectDisabled">Category</label>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+                </form>
+
+    
+            </div>
+
+            <div class="col-lg-6 col-sm-0">
+                <!-- <img class="img-fluid" style="" src="../assets/img/undraw_code_typing_re_p8b9.webp" alt=""> -->
+            </div>
+        </div>
+       
+    </div>
         </div>
       </div>
 
@@ -591,16 +712,20 @@
 
   <script type="module">
     import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js'
+    import experience_data from '/assets/data/experience_data.js';
 
     createApp({
       mounted() {
         setInterval(this.changeText, 1000);
+        this.experiences = experience_data;
+        console.log(this.experiences);
       },
       data() {
         return {
           messages: ['Website Designer', 'Software Developer', 'Coding Instructor', 'Game Developer'],
           message: 'Tech Nerd',
           count: 0,
+          experiences: experience_data
         }
       },
       methods: {
@@ -612,7 +737,7 @@
           }
         }
       }
-    }).mount('#main-intro')
+    }).mount('#body')
   </script>
 </body>
 
