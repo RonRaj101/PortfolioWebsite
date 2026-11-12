@@ -215,7 +215,7 @@ var project_data = [
         "name": "Founder Equity Calculator",
         "desc": "A simple web application that calculates the equity distribution among the founders of a startup based on their contributions.",
         "images":{
-            "main": "../assets/img/Projects/Founder Equity Calculator/undraw_Calculator_re_alsc.webp",
+            "main": "../assets/img/Projects/Founder Equity Calculator/undraw_Calculator_re_alsc.svg",
             "secondary": ""
         },
         "links":{
@@ -235,6 +235,36 @@ var project_data = [
             "4":"github",
             "5":"bootstrap",
             "6":"equity-calculator",
+        },
+        "tags":{
+            "1":"webdev",
+            "2": "other"
+        }
+    },
+     {
+        "name": "Link Vault",
+        "desc": "Browser based local storage application that allows users to store and manage their links in a secure and organized manner.",
+        "images":{
+            "main": "../assets/img/Projects/LinkVault/linkvault.svg",
+            "secondary": ""
+        },
+        "links":{
+            "1": {
+                "link_name":"Functional Preview", 
+                "link_url": "https://ronraj101.github.io/linkvault/"
+            },
+            "2": {
+                "link_name":"Source Code",
+                "link_url": "https://github.com/RonRaj101/linkvault"
+            }
+        },
+        "tools":{
+            "1": "react",
+            "2":"typescript",
+            "3": "vite",
+            "4":"express",
+            "5":"sql.js",
+            "6":"Cheerio",
         },
         "tags":{
             "1":"webdev",
