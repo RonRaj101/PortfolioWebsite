@@ -1,5 +1,20 @@
 var experience_data = [
     {
+        "title": "Web Applications Designer",
+        "company": "iMedhas Consulting Services",
+        "desc": "Designing & Developing Website Applications, Delivering responsive, high-performance, and visually appealing designs, working in Agile/Scrum environments with cross-functional teams.",
+        "website": "https://imedhas.com/",
+        "logo":"../assets/imedhas.webp",
+        "duration": "2025 - ",
+        "location": "Bracknell, UK",
+        "tags":{
+            "1": "React.js",
+            "2":"Web Apps",
+            "3": "Software Development",
+            "4": "UI/UX Design"
+        }
+    },
+    {
         "title": "Coding Instructor",
         "company": "Code Ninjas",
         "desc": "Working with children aged 5-15 to teach them the fundamentals of coding and programming. Teaching them how to create their own games and animations using Scratch, Python, and JavaScript.",
@@ -36,7 +51,7 @@ var experience_data = [
         "desc": "Freelance Website Developer/Designer for clients across the world. Working with mainly WordPress and WooCommerce with an emphasis on customizability and responsiveness. Integrating various plugins and APIs to achieve the desired functionality. Custom Websites also developed from scratch using HTML, CSS, JS, Bootstrap, PHP, etc.",
         "website": "https://www.upwork.com/freelancers/~01113a66916e3b3995",
         "logo":"../assets/Upwork.webp",
-        "duration": "2020 - ",
+        "duration": "2020 - 2025",
         "location": "Remote",
         "tags":{
             "3": "woocommerce",
